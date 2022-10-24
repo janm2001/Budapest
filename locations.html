@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budapest</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        color: #fff;
+        background-color: #131316;
+      }
+
+      nav {
+        background-color: #101010;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+
+      nav li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+      }
+
+      nav li a:hover {
+        color: rgb(0, 156, 246);
+        border-bottom: 2px solid rgb(0, 156, 246);
+      }
+
+      #food {
+        margin: 50px auto;
+        width: 90%;
+      }
+
+      #food .first {
+        display: flex;
+        height: 70vh;
+        gap: 40px;
+        margin: 40px 0;
+      }
+
+      #food .second {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 70vh;
+        gap: 40px;
+        margin: 20px 0;
+      }
+
+      .info {
+        height: 70vh;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+      }
+
+      .info .wrap {
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .info .wrap h2{
+        text-align: center;
+      }
+
+      .second .info {
+        margin: 0 20px;
+      }
+
+      .image {
+        flex: 1;
+      }
+
+      .image img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media(max-width:1000px){
+        .info .wrap {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      #food .first {
+        display: flex;
+        height: 100vh;
+        gap: 40px;
+        margin: 40px 0;
+      }
+
+      #food .second {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100vh;
+        gap: 40px;
+        margin: 20px 0;
+      }
+
+      .info {
+        height: 100vh;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+      }
+      }
+
+      @media(max-width:768px){
+        #food .first {
+        display: flex;
+        flex-direction: column;
+        
+        
+      }
+
+      #food .second {
+        display: flex;
+        flex-direction: column;
+        
+      }
+
+      .info {
+        
+        flex: 0;
+        
+      }
+
+      .image {
+        flex: 0;
+      }
+
+      .image img {
+        width: 100%;
+        height: 300px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="locations.html">Locations</a></li>
+      </ul>
+    </nav>
+
+    <main id="food">
+      <section class="first">
+        <div class="image">
+          <img src="images/andrew-kondrakov-AAdFqTxMbQw-unsplash.jpg" alt="" />
+        </div>
+        <div class="info">
+          <div class="wrap">
+            <h2>Parliament Building</h2>
+            <p>
+              What is it? A 45-minute tour of Budapest’s national Parliament
+              Building – one of the city’s most famous landmarks.
+            </p>
+            <p>
+              Why go? The 691-room building is famed for its Gothic Revival
+              architecture, ornate statues and gorgeous paintings. Learn about
+              the political history of Budapest with insight and anecdotes from
+              an expert tour guide.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="second">
+        <div class="image">
+          <img src="images/abhishek-singh-VY5VxW1KLkE-unsplash.jpg" alt="" />
+        </div>
+        <div class="info">
+          <div class="wrap">
+            <h2>Fisherman Bastion</h2>
+            <p>
+              What is it? Built between 1895 and 1902 to celebrate the 1000th
+              birthday of the Hungarian state, the Fisherman’s Bastion is an
+              impressive neo-Gothic viewing terrace situated on the Buda bank of
+              the Danube on Castle Hill.
+            </p>
+            <p>
+              Why go? For unforgettable views in a fairy-tale setting, there’s
+              nowhere better. Climb the ornate turrets and peep at boats bobbing
+              lazily down the Danube before popping into one of the city’s most
+              famous patisseries, the 200-year-old Ruszwurm Confectionery, while
+              you’re up there.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="first">
+        <div class="image">
+          <img src="images/tjasa-oblak-ZYVysCLi-6w-unsplash.jpg" alt="" />
+        </div>
+        <div class="info">
+          <div class="wrap">
+            <h2>Buda Castle</h2>
+            <p>
+              What is it? A spectacular 13th-century palace atop Castle Hill.
+            </p>
+            <p>
+              Why go? Buda Castle is a UNESCO World Heritage Site and contains
+              the Hungarian National Gallery, the Castle Museum, and the
+              National Széchenyi Library. There’s no better place to get your
+              culture fix.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="second">
+        <div class="image">
+          <img src="images/lukas-ganster-Ulb81r6AQTo-unsplash.jpg" alt="" />
+        </div>
+        <div class="info">
+          <div class="wrap">
+            <h2>Chain Bridge</h2>
+            <p>
+              What is it? Budapest’s magnificent suspension bridge (unveiled in
+              1849) connects the Buda (West) and Pest (Eastern) sides of the
+              city, arching over the River Danube. Designed by an English
+              engineer and built by a Scot, the bridge represents national pride
+              and economic advancement.
+            </p>
+            <p>
+              Why go? It’s historically important, architecturally impressive
+              and only takes 15 minutes to stroll across, so you can marvel at
+              the views stretching for miles on both sides of the river and get
+              some superb photographs. It also looks fantastic at night when
+              it’s all lit up.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="first">
+        <div class="image">
+          <img src="images/julius-jansson-A55FO-upesE-unsplash.jpg" alt="" />
+        </div>
+        <div class="info">
+          <div class="wrap">
+            <h2>Great Market Hall</h2>
+            <p>
+              What is it? The Great Market Hall is a restored neo-Gothic tunnel
+              where you can pick up the best local produce and handicrafts.
+            </p>
+            <p>
+              Why go? For the superb architecture and a total sensory overload,
+              or to source some one-of-a-kind souvenirs and sample unfamiliar
+              Hungarian delicacies. From pickles and fresh veg to meat, seafood
+              and more, just thinking about it is making us hungry.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

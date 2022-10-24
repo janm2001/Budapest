@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budapest</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        color: #fff;
+        background-color: #131316;
+      }
+
+      nav {
+        background-color: #101010;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+
+      nav li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+      }
+
+      nav li a:hover {
+        color: rgb(0, 156, 246);
+        border-bottom: 2px solid rgb(0, 156, 246);
+      }
+
+      #food {
+        margin: 50px auto;
+        width: 90%;
+      }
+
+      #food .first {
+        display: flex;
+        height: 50vh;
+        gap: 40px;
+        margin: 40px 0;
+      }
+
+      #food .second {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 50vh;
+        gap: 40px;
+        margin: 20px 0;
+      }
+
+      .info {
+        height: 50vh;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+      }
+
+      .second .info {
+        margin: 0 20px;
+      }
+
+      .image {
+        flex: 2;
+      }
+
+      .image img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .wrap {
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .wrap h2{
+        text-align: center;
+      }
+
+      @media(max-width:1000px){
+        .wrap {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      #food .first {
+        display: flex;
+        height: 70vh;
+        gap: 40px;
+        margin: 40px 0;
+      }
+
+      #food .second {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 70vh;
+        gap: 40px;
+        margin: 20px 0;
+      }
+      }
+
+      @media(max-width:768px){
+        #food .first {
+        display: flex;
+        flex-direction: column;
+        
+        
+      }
+
+      #food .second {
+        display: flex;
+        flex-direction: column;
+        
+      }
+
+      .info {
+        
+        flex: 0;
+        
+      }
+
+      .image {
+        flex: 0;
+      }
+
+      .image img {
+        width: 100%;
+        height: 300px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="locations.html">Locations</a></li>
+      </ul>
+    </nav>
+
+    <main id="food">
+      <section class="first">
+        <div class="image">
+          <img src="images/Budapest-79.jpg" alt="" />
+        </div>
+        <div class="info">
+          <div class="wrap">
+            <h2>Langos</h2>
+            <p>
+              This deep-fried dough is traditionally topped with sour cream and
+              cheese (making it a great traditional dish for vegetarians in
+              Budapest), though today you’ll see it topped with just about
+              anything imaginable.
+            </p>
+            <p>
+              We recommend trying it at least once prepared traditionally,
+              though–you just may end up as hooked on it as we are.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="second">
+        <div class="image">
+          <img src="images/Budapest-83.jpg" alt="" />
+        </div>
+        <div class="info">
+          <div class="wrap">
+            <h2>Jókai Bean Soup</h2>
+            <p>
+              This bean soup, made with vegetables, sausage, and topped with
+              sour cream, is one of my personal favorite things to eat in
+              Budapest, especially on a cold day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="first">
+        <div class="image">
+          <img src="images/Budapest-104.jpg" alt="" />
+        </div>
+        <div class="info">
+          <div class="wrap">
+            <h2>Kolbász</h2>
+            <p>
+              Hungarian sausage is practically an institution: there are endless
+              varieties and options, and so far, they are all completely
+              amazing.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="second">
+        <div class="image">
+          <img src="images/Budapest-132.jpg" alt="" />
+        </div>
+        <div class="info">
+          <div class="wrap">
+            <h2>Chicken Paprikash</h2>
+            <p>
+              One of the most popular dishes in Budapest, chicken paprikash is
+              essentially chicken coated in a sour cream sauce (heavy on the
+              paprika, of course).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="first">
+        <div class="image">
+          <img src="images/Budapest-131.jpg" alt="" />
+        </div>
+        <div class="info">
+          <div class="wrap">
+            <h2>Kürtőskalács</h2>
+            <p>
+              These round, spiral cakes that are made by roasting on a spit are
+              now all the rage across Central Europe–but they’re original to
+              Hungary, and definitely worth trying when you’re looking for the
+              best food in Budapest!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="second">
+        <div class="image">
+          <img src="images/Budapest-78.jpg" alt="" />
+        </div>
+        <div class="info">
+          <div class="wrap">
+            <h2>Dobos torta</h2>
+            <p>
+              Sponge cake plus layers of chocolate buttercream, topped with
+              caramel–the combination makes for an amazing cake!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
